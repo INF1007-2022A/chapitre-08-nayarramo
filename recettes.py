@@ -16,3 +16,14 @@ def print_recipe(ingredients: dict) -> None:
     else:
         print("La recette demandée n'existe pas!")
         print(f"Les recettes existantes sont: {list(ingredients.keys())}")
+
+def delete_recipe(dictionary):
+    name = input("Entrez le nom de la recette que vous voulez supprimer.\n")
+
+    if name in dictionary:
+        del dictionary[name]
+        print("La recette est supprimée!")
+    else:
+        print("Cette recette n'existe pas!")
+
+    return dictionary

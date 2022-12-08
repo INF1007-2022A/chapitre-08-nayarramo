@@ -110,4 +110,3 @@ if __name__ == '__main__':
     print(exercice5("./exemple.txt"))
     exercice6("./notes.txt", "./notes_skip.txt")
 
-    pass
