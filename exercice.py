@@ -36,7 +36,7 @@ def notes(f1, f2):
                 if value[0] < int(note) <= value[1]:
                     file2.write(note+" "+ key+"\n")
 
-def recipe_book(recipe_):       #pickle for coherence but any type works (json better)
+def recipe_book(recipe_):       #pickle for coherence
     if path.exists(recipe_):
         with open(recipe_, 'rb') as loading:    #b for binary as pickle needs binary not string
             recipes = pickle.load(recipe_)
